@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { ItemChatComponent } from '../item-chat/item-chat.component';
 
 @Component({
@@ -9,7 +10,7 @@ import { ItemChatComponent } from '../item-chat/item-chat.component';
   standalone: true,
   templateUrl: './chat.page.html',
   styleUrls: ['./chat.page.scss'],
-  imports: [IonicModule, CommonModule, FormsModule, ItemChatComponent]
+  imports: [IonicModule, CommonModule, FormsModule, RouterModule, ItemChatComponent]
 })
 export class ChatPage implements OnInit {
 
